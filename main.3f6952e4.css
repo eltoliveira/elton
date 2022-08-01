@@ -1535,11 +1535,6 @@ address {
 	line-height: 1.78
 }
 
-code,
-kbd,
-pre,
-samp {
-}
 
 code {
 	color: #c7254e;
@@ -5941,7 +5936,7 @@ button.close {
 	border: 1px solid #fff;
 	border-radius: 10px;
 	cursor: pointer;
-	background-color: #000\9;
+	background-color: #000;
 	background-color: transparent
 }
 
@@ -8491,7 +8486,7 @@ a {
 .w3-teal,
 .w3-hover-teal:hover {
 	color: #fff !important;
-	background-color: #009688 !important
+	background-color: #1900ff !important
 }
 
 .w3-yellow,
@@ -8659,7 +8654,7 @@ a {
 
 .w3-text-teal,
 .w3-hover-text-teal:hover {
-	color: #009688 !important
+	color: #1900ff !important
 }
 
 .w3-text-yellow,
@@ -8797,7 +8792,7 @@ a {
 
 .w3-border-teal,
 .w3-hover-border-teal:hover {
-	border-color: #009688 !important
+	border-color: #1900ff !important
 }
 
 .w3-border-yellow,
