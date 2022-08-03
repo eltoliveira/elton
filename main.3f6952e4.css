@@ -1,15 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:900|Roboto+Mono:300,400,700);
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
 
-/* -------------------------------- 
 
-File#: _1_vertical-timeline
-Title: Vertical Timeline
-Descr: A vertical timeline used to display a sequence of events/steps
-Usage: codyhouse.co/license
-
--------------------------------- */
-/* reset */
 *, *::after, *::before {
   box-sizing: border-box;
 }
@@ -22,7 +14,7 @@ Usage: codyhouse.co/license
 }
 
 body {
-  background-color: hsl(0 0% 100%);
+  background-color: rgb(75, 74, 74);
   color: hsl(230 7% 23%);
   font-size: 1rem;
 }
@@ -115,7 +107,7 @@ img, video, svg {
   --vq4-color-contrast-medium-hsl: 225, 4%, 47%;
   --vq4-color-bg-dark-hsl: 240, 4%, 95%;
   --vq4-color-bg-light-hsl: 0, 0%, 100%;
-  --vq4-color-white-hsl: 0, 0%, 100%;
+  --vq4-color-white-hsl: 0, 1%, 23%, 0.849;
   --vq4-color-primary-darker-hsl: 250, 84%, 38%;
   --vq4-color-primary-light-hsl: 250, 84%, 60%;
   --vq4-color-contrast-lower-hsl: 240, 4%, 85%;
@@ -155,11 +147,11 @@ img, video, svg {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  font-size: 1em;
+  font-size: 1,2em;
   white-space: nowrap;
   text-decoration: none;
-  background: hsl(var(--vq4-color-bg-dark-hsl));
-  color: hsl(var(--vq4-color-contrast-higher-hsl));
+  background: rgb(58, 58, 58);
+  color: blue;
   cursor: pointer;
   text-decoration: none;
   line-height: 1.2;
@@ -231,7 +223,7 @@ img, video, svg {
   left: calc((var(--v-timeline-marker-size) - var(--v-timeline-track-width)) * 0.5);
   height: 100%;
   width: var(--v-timeline-track-width);
-  background-color: hsla(var(--vq4-color-contrast-higher-hsl), 0.1);
+  background-color: rgba(122, 122, 122, 0.87);
 }
 
 .v-timeline__section {
@@ -266,7 +258,7 @@ img, video, svg {
   left: calc(-1 * var(--v-timeline-triangle-size) + 1px);
   height: var(--v-timeline-triangle-size);
   width: var(--v-timeline-triangle-size);
-  background-color: inherit;
+  background-color: rgb(240, 14, 14);
   -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 100%);
           clip-path: polygon(0% 0%, 100% 0%, 100% 100%);
 }
@@ -601,13 +593,13 @@ img, video, svg {
   position: relative;
 }
 
-.vq4-bg-light {
+.vq4-bg-dark {
   --vq4-bg-o: 1;
   background-color: hsla(var(--vq4-color-bg-light-hsl), var(--vq4-bg-o, 1));
 }
 
 .vq4-border-3 {
-  --vq4-border-width: 3px;
+  --vq4-border-width: 0px;
 }
 
 .vq4-border-bg-dark {
@@ -620,13 +612,13 @@ img, video, svg {
   height: auto;
   margin-bottom: 10%;
   margin-top: 10%;
-  margin-left: 15%;
-  margin-right: 15%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 .containerservices h1 {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
   font-weight: 600;
   position: relative;
 }
@@ -645,24 +637,30 @@ img, video, svg {
 .rowservices {
   background: #313135de;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+  grid-gap: 3px;
+
 }
 
 .service {
   text-align: center;
-  padding: 25px 25px;
   border-radius: 9px;
   font-size: 14px;
   cursor: pointer;
   background: transparent;
   transition: transform 0.5s;
+  margin-bottom: 1.05vw;
+  margin-top: 1.05vw;
+  margin-right: 2vw;
+  margin-left: 2vw;
 }
 
 .service i {
-  font-size: 40px;
-  margin-bottom: 10px;
+  font-size: 3vw;
   color: #313135c7;
+  margin-top: 2vw;
+  margin-right: 2vw;
+  margin-left: 2vw;
 }
 
 .service h2 {
@@ -674,20 +672,11 @@ img, video, svg {
   background: #3f3f3f;
   color: #fff;
   transform: scale(1.05);
+
 }
 
 .service:hover i {
   color: #fff;
-}
-
-
-html {
-	-ms-text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%
-}
-
-body {
-	margin: 0
 }
 
 article,
@@ -942,10 +931,6 @@ th {
 
 	h2,
 	h3,
-	p {
-		orphans: 3;
-		widows: 3
-	}
 
 	h2,
 	h3 {
@@ -988,13 +973,9 @@ th {
 	box-sizing: border-box
 }
 
-html {
-	font-size: 10px;
-	-webkit-tap-highlight-color: transparent
-}
 
 body {
-	font-family: Roboto Mono, Helvetica, Arial, sans-serif;
+	font-family: Roboto Mono;
 	font-size: 11px;
 	line-height: 1.78;
 	color: #000;
@@ -1218,9 +1199,6 @@ h6 {
 	font-size: 10px
 }
 
-p {
-	margin: 0 0 9.5px
-}
 
 .lead {
 	margin-bottom: 19px;
@@ -6328,11 +6306,6 @@ button.close {
 	bottom: 0
 }
 
-body {
-	padding: 10px;
-	min-height: 100vh
-}
-
 body.minimal {
 	border: none;
 	padding: 0
@@ -6356,7 +6329,8 @@ body.minimal {
 
 .hero-full-container .hero-full-wrapper .text-content {
 	vertical-align: middle;
-	display: table-cell
+	display: table-cell;
+	color: black
 }
 
 .white-text-container h1,
@@ -6365,7 +6339,6 @@ body.minimal {
 .white-text-container h4,
 .white-text-container h5,
 .white-text-container p {
-	text-shadow: 0 1px 3px #000;
 	color: #fff
 }
 
@@ -6816,33 +6789,7 @@ textarea {
 	font-size: 30px
 }
 
-.template-example .template-title-example:after,
-.template-example .template-title-example:before {
-	display: none
-}
 
-.template-example .table>tbody>tr>td,
-.template-example .table>tbody>tr>th,
-.template-example .table>tfoot>tr>td,
-.template-example .table>tfoot>tr>th,
-.template-example .table>thead>tr>td,
-.template-example .table>thead>tr>th {
-	padding: 0 15px
-}
-
-.list-icons {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden
-}
-
-.list-icons li {
-	float: left;
-	margin-right: 5px
-}
-
-/* W3.CSS 4.15 December 2020 by Jan Egil and Borge Refsnes */
 html {
 	box-sizing: border-box
 }
@@ -6853,15 +6800,7 @@ html {
 	box-sizing: inherit
 }
 
-/* Extract from normalize.css by Nicolas Gallagher and Jonathan Neal git.io/normalize */
-html {
-	-ms-text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%
-}
 
-body {
-	margin: 0
-}
 
 article,
 aside,
@@ -7060,65 +6999,13 @@ textarea {
 	font: inherit
 }
 
-/* End extract */
-html,
-body {
-	font-family: Verdana, sans-serif;
-	font-size: 15px;
-	line-height: 1.5
-}
-
-html {
-	overflow-x: hidden
-}
-
-h1 {
-	font-size: 36px
-}
-
-h2 {
-	font-size: 30px
-}
-
-h3 {
-	font-size: 24px
-}
-
-h4 {
-	font-size: 20px
-}
-
-h5 {
-	font-size: 18px
-}
-
-h6 {
-	font-size: 16px
-}
-
-.w3-serif {
-	font-family: serif
-}
-
-.w3-sans-serif {
-	font-family: sans-serif
-}
-
-.w3-cursive {
-	font-family: cursive
-}
-
-.w3-monospace {
-	font-family: monospace
-}
-
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-	font-family: "Segoe UI", Arial, sans-serif;
+	font-family: Roboto Mono;
 	font-weight: 400;
 	margin: 10px 0
 }
@@ -7949,7 +7836,7 @@ a {
 
 .w3-code,
 .w3-codespan {
-	font-family: Consolas, "courier new";
+	font-family: Roboto Mono;
 	font-size: 16px
 }
 
@@ -8176,7 +8063,8 @@ a {
 }
 
 .w3-large {
-	font-size: 18px !important
+	font-size: 18px !important;
+	padding-right: 0
 }
 
 .w3-xlarge {
@@ -8350,141 +8238,6 @@ a {
 
 .w3-hover-none:hover {
 	box-shadow: none !important
-}
-
-/* Colors */
-.w3-amber,
-.w3-hover-amber:hover {
-	color: #000 !important;
-	background-color: #ffc107 !important
-}
-
-.w3-aqua,
-.w3-hover-aqua:hover {
-	color: #000 !important;
-	background-color: #00ffff !important
-}
-
-.w3-blue,
-.w3-hover-blue:hover {
-	color: #fff !important;
-	background-color: #2196F3 !important
-}
-
-.w3-light-blue,
-.w3-hover-light-blue:hover {
-	color: #000 !important;
-	background-color: #87CEEB !important
-}
-
-.w3-brown,
-.w3-hover-brown:hover {
-	color: #fff !important;
-	background-color: #795548 !important
-}
-
-.w3-cyan,
-.w3-hover-cyan:hover {
-	color: #000 !important;
-	background-color: #00bcd4 !important
-}
-
-.w3-blue-grey,
-.w3-hover-blue-grey:hover,
-.w3-blue-gray,
-.w3-hover-blue-gray:hover {
-	color: #fff !important;
-	background-color: #607d8b !important
-}
-
-.w3-green,
-.w3-hover-green:hover {
-	color: #fff !important;
-	background-color: #4CAF50 !important
-}
-
-.w3-light-green,
-.w3-hover-light-green:hover {
-	color: #000 !important;
-	background-color: #8bc34a !important
-}
-
-.w3-indigo,
-.w3-hover-indigo:hover {
-	color: #fff !important;
-	background-color: #3f51b5 !important
-}
-
-.w3-khaki,
-.w3-hover-khaki:hover {
-	color: #000 !important;
-	background-color: #f0e68c !important
-}
-
-.w3-lime,
-.w3-hover-lime:hover {
-	color: #000 !important;
-	background-color: #cddc39 !important
-}
-
-.w3-orange,
-.w3-hover-orange:hover {
-	color: #000 !important;
-	background-color: #ff9800 !important
-}
-
-.w3-deep-orange,
-.w3-hover-deep-orange:hover {
-	color: #fff !important;
-	background-color: #ff5722 !important
-}
-
-.w3-pink,
-.w3-hover-pink:hover {
-	color: #fff !important;
-	background-color: #e91e63 !important
-}
-
-.w3-purple,
-.w3-hover-purple:hover {
-	color: #fff !important;
-	background-color: #9c27b0 !important
-}
-
-.w3-deep-purple,
-.w3-hover-deep-purple:hover {
-	color: #fff !important;
-	background-color: #673ab7 !important
-}
-
-.w3-red,
-.w3-hover-red:hover {
-	color: #fff !important;
-	background-color: #f44336 !important
-}
-
-.w3-sand,
-.w3-hover-sand:hover {
-	color: #000 !important;
-	background-color: #fdf5e6 !important
-}
-
-.w3-teal,
-.w3-hover-teal:hover {
-	color: #fff !important;
-	background-color: #1900ff !important
-}
-
-.w3-yellow,
-.w3-hover-yellow:hover {
-	color: #000 !important;
-	background-color: #ffeb3b !important
-}
-
-.w3-white,
-.w3-hover-white:hover {
-	color: #000 !important;
-	background-color: #fff !important
 }
 
 .w3-black,
@@ -8670,169 +8423,4 @@ a {
 .w3-text-light-gray,
 .w3-hover-text-light-gray:hover {
 	color: #f1f1f1 !important
-}
-
-.w3-text-dark-grey,
-.w3-hover-text-dark-grey:hover,
-.w3-text-dark-gray,
-.w3-hover-text-dark-gray:hover {
-	color: #3a3a3a !important
-}
-
-.w3-border-amber,
-.w3-hover-border-amber:hover {
-	border-color: #ffc107 !important
-}
-
-.w3-border-aqua,
-.w3-hover-border-aqua:hover {
-	border-color: #00ffff !important
-}
-
-.w3-border-blue,
-.w3-hover-border-blue:hover {
-	border-color: #2196F3 !important
-}
-
-.w3-border-light-blue,
-.w3-hover-border-light-blue:hover {
-	border-color: #87CEEB !important
-}
-
-.w3-border-brown,
-.w3-hover-border-brown:hover {
-	border-color: #795548 !important
-}
-
-.w3-border-cyan,
-.w3-hover-border-cyan:hover {
-	border-color: #00bcd4 !important
-}
-
-.w3-border-blue-grey,
-.w3-hover-border-blue-grey:hover,
-.w3-border-blue-gray,
-.w3-hover-border-blue-gray:hover {
-	border-color: #607d8b !important
-}
-
-.w3-border-green,
-.w3-hover-border-green:hover {
-	border-color: #4CAF50 !important
-}
-
-.w3-border-light-green,
-.w3-hover-border-light-green:hover {
-	border-color: #8bc34a !important
-}
-
-.w3-border-indigo,
-.w3-hover-border-indigo:hover {
-	border-color: #3f51b5 !important
-}
-
-.w3-border-khaki,
-.w3-hover-border-khaki:hover {
-	border-color: #f0e68c !important
-}
-
-.w3-border-lime,
-.w3-hover-border-lime:hover {
-	border-color: #cddc39 !important
-}
-
-.w3-border-orange,
-.w3-hover-border-orange:hover {
-	border-color: #ff9800 !important
-}
-
-.w3-border-deep-orange,
-.w3-hover-border-deep-orange:hover {
-	border-color: #ff5722 !important
-}
-
-.w3-border-pink,
-.w3-hover-border-pink:hover {
-	border-color: #e91e63 !important
-}
-
-.w3-border-purple,
-.w3-hover-border-purple:hover {
-	border-color: #9c27b0 !important
-}
-
-.w3-border-deep-purple,
-.w3-hover-border-deep-purple:hover {
-	border-color: #673ab7 !important
-}
-
-.w3-border-red,
-.w3-hover-border-red:hover {
-	border-color: #f44336 !important
-}
-
-.w3-border-sand,
-.w3-hover-border-sand:hover {
-	border-color: #fdf5e6 !important
-}
-
-.w3-border-teal,
-.w3-hover-border-teal:hover {
-	border-color: #1900ff !important
-}
-
-.w3-border-yellow,
-.w3-hover-border-yellow:hover {
-	border-color: #ffeb3b !important
-}
-
-.w3-border-white,
-.w3-hover-border-white:hover {
-	border-color: #fff !important
-}
-
-.w3-border-black,
-.w3-hover-border-black:hover {
-	border-color: #000 !important
-}
-
-.w3-border-grey,
-.w3-hover-border-grey:hover,
-.w3-border-gray,
-.w3-hover-border-gray:hover {
-	border-color: #9e9e9e !important
-}
-
-.w3-border-light-grey,
-.w3-hover-border-light-grey:hover,
-.w3-border-light-gray,
-.w3-hover-border-light-gray:hover {
-	border-color: #f1f1f1 !important
-}
-
-.w3-border-dark-grey,
-.w3-hover-border-dark-grey:hover,
-.w3-border-dark-gray,
-.w3-hover-border-dark-gray:hover {
-	border-color: #616161 !important
-}
-
-.w3-border-pale-red,
-.w3-hover-border-pale-red:hover {
-	border-color: #ffe7e7 !important
-}
-
-.w3-border-pale-green,
-.w3-hover-border-pale-green:hover {
-	border-color: #e7ffe7 !important
-}
-
-.w3-border-pale-yellow,
-.w3-hover-border-pale-yellow:hover {
-	border-color: #ffffcc !important
-}
-
-.w3-border-pale-blue,
-.w3-hover-border-pale-blue:hover {
-	border-color: #e7ffff !important
 }
