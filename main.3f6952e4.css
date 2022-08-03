@@ -547,7 +547,7 @@ img, video, svg {
   max-width: 32rem;
 }
 
-@media(min-width: 48rem) {
+@media(min-width: 36rem) {
   .vq4-max-width-adaptive-lg {
     max-width: 48rem;
   }
@@ -615,23 +615,6 @@ img, video, svg {
   border-color: hsla(var(--vq4-color-bg-dark-hsl), var(--vq4-border-o, 1));
 }
 
-
-
-
-
-
-
-
-
-
-
-/*!
- * Bootstrap v3.3.7 (http://getbootstrap.com)
- * Copyright 2011-2016 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
- */
-/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
-
 .containerservices {
   width: auto;
   height: auto;
@@ -643,7 +626,6 @@ img, video, svg {
 
 .containerservices h1 {
   text-align: center;
-
   margin-bottom: 60px;
   font-weight: 600;
   position: relative;
@@ -651,7 +633,7 @@ img, video, svg {
 
 .containerservices h1::after {
   content: '';
-  background: #303ef7;
+  background: #313135fd;
   width: 100px;
   height: 5px;
   position: absolute;
@@ -661,6 +643,7 @@ img, video, svg {
 }
 
 .rowservices {
+  background: #313135de;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 30px;
@@ -668,8 +651,8 @@ img, video, svg {
 
 .service {
   text-align: center;
-  padding: 25px 10px;
-  border-radius: 0px;
+  padding: 25px 25px;
+  border-radius: 9px;
   font-size: 14px;
   cursor: pointer;
   background: transparent;
@@ -679,7 +662,7 @@ img, video, svg {
 .service i {
   font-size: 40px;
   margin-bottom: 10px;
-  color: #303ef7;
+  color: #313135c7;
 }
 
 .service h2 {
@@ -688,9 +671,9 @@ img, video, svg {
 }
 
 .service:hover {
-  background: #303ef7;
+  background: #3f3f3f;
   color: #fff;
-  transform: scale(1.26);
+  transform: scale(1.05);
 }
 
 .service:hover i {
