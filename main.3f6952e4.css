@@ -13,6 +13,10 @@
   border: 0;
 }
 
+.w3-teal, .w3-hover-teal:hover {
+    color: #fff!important;
+    background-color: #009688!important;
+}
 body {
   background-color: rgb(75, 74, 74);
   color: hsl(230 7% 23%);
@@ -8259,7 +8263,7 @@ a {
 .w3-light-gray,
 .w3-hover-light-gray:hover {
 	color: #000 !important;
-	background-color: #f1f1f1 !important
+	background-color: #2600ffd2 !important
 }
 
 .w3-dark-grey,
