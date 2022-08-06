@@ -2,8 +2,8 @@
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
 
 .s1 {
-	padding-left: 20px;
-	padding-right: 10em;
+	padding-left: 10vh;
+	padding-right: 10vh;
 	letter-spacing: 1px;
 	font-family: 'Roboto Mono';
 	color: #fff;
@@ -26,8 +26,9 @@
 
 .contentor {
 	font-size: medium;
-	padding-left: 0em;
-	padding-right: oem
+	padding-left: 15vh;
+	padding-right: 15vh;
+	padding: 5vh;
 }
 
 .center {
@@ -584,10 +585,10 @@ img {
 .rowservices {
 	background: #000000af;
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
 	margin-right: 2vw;
 	margin-left: 2vw;
-	padding: 10px;
+	margin-top: 2vw;
 
 }
 
@@ -597,23 +598,24 @@ img {
 }
 .servix {
 	display: grid;
-	padding: 10px;
+	padding-right: 10vh;
+	padding-left: 10vh;
 	text-align: center;
 	border-radius: 9px;
 	font-size: 1em;
 	cursor: pointer;
 	transition: transform .5s;
-	margin-bottom: 2em;
-	margin-top: 1.2em;
-	margin-right: 2em;
-	margin-left: 2em;
+	margin-bottom: 20vh;
+	margin-top: 0vh;
+	margin-right: 0vh;
+	margin-left: 0vh;
 }
 
 
 .servix:hover {
 	background: #c0c0c086;
 	color: #fff;
-	transform: scale(1.05)
+	transform: scale(1.02)
 }
 
 .service:hover i {
@@ -638,29 +640,34 @@ img {
 	margin-top: 1.2em;
 	margin-right: 2em;
 	margin-left: 2em;
+	padding-top: 10px;
 }
 
 .service i {
-	font-size: 1.5 em;
+	padding-top: 10px;
+	font-size: 2em;
 	color: #313135c7;
 	margin-top: 2ew;
-	line-height: 1.55
+	line-height: 1.55;
+	color: rgb(8, 0, 126);
 }
 
 .service h2 {
 	font-weight: 600;
 	font-size: 1.4em
+	color: rgb(8, 0, 126);
 }
 
 .service:hover {
 	background: #c0c0c086;
 	color: #fff;
 	transform: scale(1.05);
-	padding: 30px;
+
 }
 
 .service:hover i {
-	color: #fff
+	color: #fff;
+	color: rgb(8, 0, 126);
 }
 
 figure,
@@ -1995,7 +2002,7 @@ body.minimal {
 }
 
 .section-container {
-	padding: 60px 0
+	padding: 0px 0
 }
 
 @media (min-width:1200px) {
@@ -2010,7 +2017,7 @@ body.minimal {
 
 @media (max-width:768px) {
 	.section-container:first-of-type {
-		padding-top: 30px
+		padding-top: 10px
 	}
 }
 .background-image-container2 {
@@ -2502,10 +2509,6 @@ a {
 .w3-twothird {
 	float: left;
 	width: 100%
-}
-
-.w3-col.s1 {
-	width: 8.33333%
 }
 
 .w3-col.s2 {
