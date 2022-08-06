@@ -1628,14 +1628,14 @@ code {
 
 	.navbar-fixed-bottom .navbar-collapse,
 	.navbar-fixed-top .navbar-collapse {
-		padding-left: 0;
-		padding-right: 0
+		padding-left: 2em;
+		padding-right: 2em;
 	}
 }
 
 .navbar-fixed-bottom .navbar-collapse,
 .navbar-fixed-top .navbar-collapse {
-	max-height: 340px
+	max-height: 10em;
 }
 
 @media (max-device-width:480px) and (orientation:landscape) {
@@ -1648,16 +1648,16 @@ code {
 
 .container>.navbar-collapse,
 .container>.navbar-header {
-	margin-right: -15px;
-	margin-left: -15px
+	margin-right: 4em;
+	margin-left: 4em;
 }
 
 @media (min-width:768px) {
 
 	.container>.navbar-collapse,
 	.container>.navbar-header {
-		margin-right: 0;
-		margin-left: 0
+		margin-right: 4em;
+		margin-left: 4em;
 	}
 }
 
@@ -1785,7 +1785,7 @@ code {
 
 	.navbar-right {
 		float: right !important;
-		margin-right: -15px
+		margin-right: 5px
 	}
 
 	.navbar-right~.navbar-right {
@@ -1880,7 +1880,7 @@ code {
 #site-border-left,
 #site-border-right,
 #site-border-top {
-	background: #000;
+	background: rgb(2, 65, 238);
 	position: fixed;
 	z-index: 1
 }
