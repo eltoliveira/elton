@@ -133,17 +133,6 @@ transition: opacity 500ms;
 
 
 
-  
-*, *::after, *::before {
-  box-sizing: border-box;
-}
-
-* {
-  font: inherit;
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
 
 .h2 {
 	font-family: 'Roboto Mono';
@@ -256,35 +245,7 @@ img, video, svg {
   }
 }
 
-/* variables */
-:root {
-  /* colors */
-  --vq4-color-primary-hsl: 250, 84%, 54%;
-  --vq4-color-bg-hsl: 0, 0%, 100%;
-  --vq4-color-contrast-high-hsl: 230, 7%, 23%;
-  --vq4-color-contrast-higher-hsl: 230, 13%, 9%;
-  --vq4-color-accent-hsl: 342, 89%, 48%;
-  --vq4-color-warning-hsl: 35, 79%, 66%;
-  --vq4-color-contrast-medium-hsl: 225, 4%, 47%;
-  --vq4-color-bg-dark-hsl: 240, 4%, 95%;
-  --vq4-color-bg-light-hsl: 0, 0%, 100%;
-  --vq4-color-white-hsl: 0, 1%, 23%, 0.849;
-  --vq4-color-primary-darker-hsl: 250, 84%, 38%;
-  --vq4-color-primary-light-hsl: 250, 84%, 60%;
-  --vq4-color-contrast-lower-hsl: 240, 4%, 85%;
 
-  /* spacing */
-  --vq4-space-2xs: 0.375rem;
-  --vq4-space-sm: 0.75rem;
-  --vq4-space-md: 1.25rem;
-  --vq4-space-lg: 2rem;
-  --vq4-space-xl: 3.25rem;
-  --vq4-space-xs: 0.5rem;
-
-  /* typography */
-  --vq4-text-sm: 0.833rem;
-  --vq4-text-sm: 0.833rem;
-}
 
 @media(min-width: 64rem){
   :root {
@@ -6203,7 +6164,8 @@ button.close {
 
 body.minimal {
 	border: none;
-	padding: 0
+	padding: 0;
+	background-color: black;
 }
 
 .hero-full-container {
