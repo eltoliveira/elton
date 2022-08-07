@@ -970,7 +970,9 @@ img {
 	--vq4-border-o: 1;
 	border-color: hsla(var(--vq4-color-bg-dark-hsl), var(--vq4-border-o, 1))
 }
-
+.direit{
+	text-align:left;
+}
 .rowservices {
 	background: #313135de;
 	display: grid;
