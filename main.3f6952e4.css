@@ -974,18 +974,18 @@ img {
 .rowservices {
 	background: #313135de;
 	display: grid;
-	grid-template-columns: 3fr 3fr 3fr ;
+	grid-template-columns:(auto )auto auto;	
+	grid-gap: 3px;
 	grid-gap: 3px;
 	margin-bottom: 1.05vw;
 	margin-top: 1.05vw;
 	margin-right: 1vw;
 	margin-left: 1vw;
-	
 
 }
 .entralizeit {
 	display: contents;
-	grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
 	margin-right: 10vw;
 	margin-left: 10w;
 	margin-top: 2vw;
@@ -3157,7 +3157,8 @@ a {
 .w3-display-bottomleft {
 	position: absolute;
 	left: 0;
-	bottom: 0
+	bottom: 0;
+	text-align: left;
 }
 
 .w3-display-left {
