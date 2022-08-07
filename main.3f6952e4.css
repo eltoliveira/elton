@@ -974,10 +974,12 @@ img {
 	text-align:left;
 }
 .rowservices {
+	grid-gap: var(--vq4-space-md);
+	grid-auto-rows: minmax(px, 3fr);
+
 	background: #313135de;
-	display: grid;
-	grid-template-columns:(auto )auto auto;	
-	grid-gap: 3px;
+	display: grid;	
+	justify-items: stretch;
 	grid-gap: 3px;
 	margin-bottom: 1.05vw;
 	margin-top: 1.05vw;
