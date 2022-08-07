@@ -447,8 +447,17 @@
                 backSpeed: 20,
                 loop: !0,
                 loopCount: 1 / 0
-             })
+               })
+            function i(t) {
+               new s.a("#typed2", {
+               stringsElement: "#typed-strings2",
+               typeSpeed: 100,
+               backSpeed: 20,
+               loop: !0,
+               loopCount: 1 / 0
+               })
           }
+         }
  
           function o() {
              t('nav li a[href=".' + location.pathname + '"]').addClass("active"), "/" == location.pathname && t('nav li a[href="./index.html"]').addClass("active")
@@ -4350,6 +4359,7 @@
                 onComplete: function (t) {},
                 preStringTyped: function (t, e) {},
                 onStringTyped: function (t, e) {},
+                
                 onLastStringBackspaced: function (t) {},
                 onTypingPaused: function (t, e) {},
                 onTypingResumed: function (t, e) {},
