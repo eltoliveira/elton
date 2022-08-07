@@ -47,7 +47,6 @@
 
 .content {
 	width: 80vm;
-	max-width: 45em;
 	padding: 1.5em 2em;
 	margin: 0 auto;
 	background: rgba(0, 0, 0, .63);
@@ -558,7 +557,11 @@ img {
 .vq4-text-center {
 	text-align: center
 }
-
+.darki{
+	background-color: rgba(100, 100, 100, 0.527);
+	color: #fff;
+	padding: 30px;
+}
 .vq4-bg-dark {
 	--vq4-bg-o: 1;
 	background-color: hsla(var(--vq4-color-bg-dark-hsl), var(--vq4-bg-o, 1))
@@ -583,39 +586,52 @@ img {
 }
 
 .rowservices {
-	background: #000000af;
+	background: #313135de;
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+	grid-gap: 3px;
+	margin-bottom: 1.05vw;
+	margin-top: 1.05vw;
 	margin-right: 2vw;
 	margin-left: 2vw;
-	margin-top: 2vw;
 
 }
-
+.entralizeit {
+	display: contents;
+	grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+	margin-right: 10vw;
+	margin-left: 10w;
+	margin-top: 2vw;
+}
 .servi {
-	background-color: rgba(48, 48, 48, .651);
-	border-radius: 9px
+
+	border-radius: 9px;
+	padding: 50px;
 }
 .servix {
-	display: grid;
-	padding-right: 10vh;
-	padding-left: 10vh;
+	padding-top: 10vh;
+	padding-left: -0vh;
 	text-align: center;
 	border-radius: 9px;
-	font-size: 1em;
+	font-size: 2em;
 	cursor: pointer;
 	transition: transform .5s;
-	margin-bottom: 20vh;
-	margin-top: 0vh;
-	margin-right: 0vh;
-	margin-left: 0vh;
+	margin-bottom: 30vh;
+	margin-top: 2vh;
+	margin-right:30%;
+	margin-left:30%;
+	background-color: rgba(37, 37, 37, 0.651);
+	padding: 25px;
 }
 
 
 .servix:hover {
-	background: #c0c0c086;
+	background: rgba(187, 187, 187, 0.027);
 	color: #fff;
-	transform: scale(1.02)
+	transform: scale(1.03);
+	text-shadow: #001aff 1px 1px 4px;
+	z-index: -2;
+
 }
 
 .service:hover i {
@@ -646,15 +662,15 @@ img {
 .service i {
 	padding-top: 10px;
 	font-size: 2em;
-	color: #313135c7;
+	color: #0f0feec7;
 	margin-top: 2ew;
 	line-height: 1.55;
-	color: rgb(8, 0, 126);
+    text-shadow: #001aff 1px 1px 1px;
 }
 
 .service h2 {
 	font-weight: 600;
-	font-size: 1.4em
+	font-size: 1.4em;
 	color: rgb(8, 0, 126);
 }
 
