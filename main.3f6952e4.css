@@ -508,7 +508,7 @@ span.title {
 	font-weight: 300;
 	line-height: 1;
 	color: #fff;
-	text-shadow: 0 0 .5rem #4032ff
+	text-shadow: 0 0 .5rem #ffffff
 }
 .p1 {
 	font-family: 'Roboto Mono';
@@ -842,15 +842,14 @@ img {
 	background-color: rgba(100, 100, 100, 0.527);
 	text-align: justify;
 	color: #fff;
-	padding: 10px;
+	padding: 4em;
 	border-radius: 5px;
-	padding-top: 16px;
-	padding-bottom: 20px;
+	padding-top: 2em;
+	padding-bottom: 2em;
 	z-index: -2;
-	margin: 3px;
+	margin: 10px;
 	margin-bottom: 10px;
-	padding-right: 20%;
-	padding-left: 20%;
+
 }
 .darki p {
 	font-family: 'Roboto mono';
@@ -900,7 +899,7 @@ img {
 }
 .neonText {
 	animation: flicker 1.5s infinite alternate;
-	color: rgb(21, 11, 172);
+	color: rgb(255, 255, 255);
 	text-shadow: 0 0 7px rgb(8, 60, 173), 0 0 10px rgb(36, 11, 179), 0 0 21px rgb(255, 255, 255), 0 0 42px rgb(17, 0, 255), 0 0 82px rgb(22, 10, 196), 0 0 92px rgb(5, 39, 114), 0 0 102px rgb(71, 7, 155), 0 0 151px rgb(35, 3, 87);
 }
 @keyframes flicker {
@@ -912,26 +911,28 @@ img {
 	}
 }
 .servix {
-	padding: 0;
+	padding: 2px;
 	text-align: center;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	margin-right: 12%;
+	margin-left: 12%;
 	border-radius: 9px;
 	cursor: pointer;
 	transition: transform .5s;
-	margin-bottom: 9vh;
-	margin: auto;
-	max-width: 50rem;
-	background-color: rgba(146, 58, 7, 0.521);
+	background-color: azul;
+	font-family: 'roboto mono';
 }
 .servix:hover i {
-	color: rgb(177, 50, 50)
+	color: branco;
 }
 .servix:hover {
-	background: rgba(248, 101, 16, 0.671);
+	background: rgba(0, 0, 139, 0.13);
 	color: rgb(255, 255, 255);
-	transform: scale(1.03);
+	transform: scale(1.04);
 }
 .service:hover i {
-	color: #fff
+	color: branco;
 }
 .service {
 	display: grid;
@@ -947,16 +948,18 @@ img {
 	padding-bottom: 10px;
 	text-align: stretch;
 }
+
+
 .service i {
 	padding-top: 10px;
-	color: #0f0feec7;
+	color: ;
 	margin-top: 2ew;
 	line-height: 1.55;
 	text-shadow: #001aff 1px 1px 1px;
 }
 .service h2 {
 	font-weight: 600;
-	color: rgb(8, 0, 126);
+	color: darkblue;
 }
 .service:hover {
 	background: #c0c0c086;
@@ -965,7 +968,7 @@ img {
 }
 .service:hover i {
 	color: #fff;
-	color: rgb(8, 0, 126);
+	color: darkblue;
 }
 figure, footer, header, main, nav, section {
 	display: block
@@ -983,7 +986,7 @@ img {
 	border: 0
 }
 button {
-	color: inherit;
+	color: darkorange;
 	font: inherit;
 	margin: 0
 }
@@ -1062,7 +1065,7 @@ hr {
 	font-family: 'Roboto Mono';
 	font-weight: 700;
 	line-height: 1.1;
-	color: #000
+	color: white;
 }
 .h1 .small, .h1 small, .h2 .small, .h2 small, .h3 .small, .h3 small, .h4 .small, .h4 small, .h5 .small, .h5 small, .h6 .small, .h6 small, h1 .small, h1 small, h2 .small, h2 small, h3 .small, h3 small, h4 .small, h4 small, h5 .small, h5 small, h6 .small, h6 small {
 	font-weight: 400;
@@ -1106,13 +1109,10 @@ a.text-primary:focus, a.text-primary:hover {
 .bg-primary {
 	color: #fff;
 }
-a.bg-primary:focus, a.bg-primary:hover {
-	background-color: #dedee4
-}
+
 .p {
 	font-size: 1em;
 	font-family: "Roboto mono";
-	z-index: 999;
 	color: white;
 }
 .page-header {
@@ -1307,7 +1307,7 @@ ul ul {
 	outline-offset: -2px
 }
 .btn:focus, .btn:hover {
-	color: #000;
+	color: darkblue;
 	text-decoration: none
 }
 .btn:active {
@@ -1323,41 +1323,44 @@ ul ul {
 	box-shadow: none
 }
 .btn-primary {
-	color: #001aff;
+	color: darkblue;
 	background-color: transparent;
-	border-color: #001aff
+	border-color: darkorange;
 }
 .btn-primary:focus {
-	color: #001aff;
+	color: darkorange;
 	background-color: transparent;
-	border-color: #000d80
+	border-color: darkblue
 }
 .btn-primary:active, .btn-primary:hover {
-	color: #001aff;
+	color: darkblue;
 	background-color: transparent;
-	border-color: #0014c2
+	border-color: darkorange	
 }
 .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover {
-	color: #001aff;
+	color: darkblue;
 	background-color: transparent;
-	border-color: #000d80
+	border-color: darkorange	
 }
 .btn-primary:active {
-	background-image: none
+	color: darkblue;
+	background-color: transparent;
+	border-color: darkorange	
 }
 .btn-primary[disabled]:focus, .btn-primary[disabled]:hover {
+	color: darkblue;
 	background-color: transparent;
-	border-color: #001aff
+	border-color: darkorange	
 }
 .btn-link {
-	color: #001aff;
-	font-weight: 400;
-	border-radius: 0
+	color: darkblue;
+	background-color: transparent;
+	border-color: darkorange	
 }
 .btn-link, .btn-link:active, .btn-link[disabled] {
+	color: darkblue;
 	background-color: transparent;
-	-webkit-box-shadow: none;
-	box-shadow: none
+	border-color: darkorange
 }
 .btn-link, .btn-link:active, .btn-link:focus, .btn-link:hover {
 	border-color: transparent
@@ -1756,7 +1759,7 @@ ul ul {
 	}
 }
 #site-border-bottom, #site-border-left, #site-border-right, #site-border-top {
-	background: rgb(2, 65, 238);
+	background: darkblue;
 	position: fixed;
 	z-index: 1
 }
