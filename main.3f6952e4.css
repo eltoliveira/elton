@@ -515,12 +515,8 @@ span.title {
 	padding-top: 1px;
 }
 .w3-teal {
-	color: #fff !important;
-	background-color: #009688 !important
-}
-body {
-	background-color: #4b4a4a;
-	color: hsl(230 7% 23%);
+	color: darkblue !important;
+	background-color: darkorange !important
 }
 h1, h2, h3, button {
 	background-color: transparent;
@@ -839,8 +835,8 @@ img {
 	text-align: center
 }
 .darki {
-	background-color: rgba(100, 100, 100, 0.527);
-	text-align: justify;
+	background-color: rgba(100, 100, 100, 0);
+	text-align: left;
 	color: #fff;
 	padding: 4em;
 	border-radius: 5px;
@@ -876,13 +872,16 @@ img {
 	text-align: left;
 }
 .rowservices {
-	background: #313135de;
+	background: #00000071;
+	backdrop-filter: blur(50px);
 	display: grid;
 	gap: 1rem;
 	grid-template-columns: repeat(auto-fit, minmax(360px, 3fr));
 	justify-content: center;
 	align-items: center;
 	grid-gap: 3px;
+	padding-left: 5vw;
+	padding-right: 5vw;
 }
 .entralizeit {
 	display: contents;
@@ -911,12 +910,10 @@ img {
 	}
 }
 .servix {
-	padding: 2px;
-	text-align: center;
-	margin-top: 1%;
-	margin-bottom: 1%;
-	margin-right: 12%;
-	margin-left: 12%;
+	text-align:center;
+	min-width: 400px;
+	padding-left: 8vw;
+	padding-right: 8vw;
 	border-radius: 9px;
 	cursor: pointer;
 	transition: transform .5s;
@@ -927,9 +924,12 @@ img {
 	color: branco;
 }
 .servix:hover {
-	background: rgba(0, 0, 139, 0.13);
+
 	color: rgb(255, 255, 255);
 	transform: scale(1.04);
+}
+.servix:p{
+	background-color: rgba(0, 0, 0, 0.534);
 }
 .service:hover i {
 	color: branco;
@@ -938,15 +938,15 @@ img {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(90%, 1fr));
 	text-align: center;
+
 	border-radius: 9px;
 	cursor: pointer;
 	transition: transform .5s;
-	margin-left: 10px;
-	margin-right: 10px;
-	padding-right: 20px;
-	padding-left: 20px;
 	padding-bottom: 10px;
+	padding-top: 10px;
 	text-align: stretch;
+	padding-left: 2vw;
+	padding-right: 2vw;
 }
 
 
@@ -959,16 +959,21 @@ img {
 }
 .service h2 {
 	font-weight: 600;
-	color: darkblue;
+	color: darkorange;
+	padding-bottom: -25px;
 }
 .service:hover {
 	background: #c0c0c086;
 	color: #fff;
 	transform: scale(1.05);
 }
+.service p{
+	padding-top: 1px;
+}
 .service:hover i {
 	color: #fff;
 	color: darkblue;
+
 }
 figure, footer, header, main, nav, section {
 	display: block
@@ -1060,6 +1065,9 @@ hr {
 }
 [role=button] {
 	cursor: pointer
+}
+.html{
+	max-width: fit-content;
 }
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
 	font-family: 'Roboto Mono';
@@ -1510,7 +1518,8 @@ ul ul {
 	position: relative;
 	min-height: 20px;
 	margin-bottom: 19px;
-	border: 1px solid transparent
+	border: 1px solid transparent;
+	backdrop-filter: blur(20px);
 }
 .navbar:after, .navbar:before {
 	content: " ";
