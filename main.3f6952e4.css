@@ -423,11 +423,6 @@
 .fui {
 	padding: 30%;
 }
-.ideia {
-	font-family: 'Roboto Mono';
-	color: #fff;
-	text-shadow: 0 0 .5rem #4032ff
-}
 .contentor {
 	padding-left: -10%;
 	padding-right: -10%;
@@ -835,21 +830,19 @@ img {
 	text-align: center
 }
 .darki {
-	background-color: rgba(100, 100, 100, 0);
-	text-align: left;
+	align-content: center;
+	backdrop-filter: blur(5px);
+	text-align: fill;
 	color: #fff;
-	padding: 4em;
-	border-radius: 5px;
-	padding-top: 2em;
-	padding-bottom: 2em;
-	z-index: -2;
-	margin: 10px;
-	margin-bottom: 10px;
-
 }
 .darki p {
-	font-family: 'Roboto mono';
-}
+		font-family: 'Roboto mono';
+	}
+
+
+
+
+
 .vq4-bg-dark {
 	--vq4-bg-o: 1;
 	background-color: hsla(var(--vq4-color-bg-dark-hsl), var(--vq4-bg-o, 1))
@@ -872,30 +865,22 @@ img {
 	text-align: left;
 }
 .rowservices {
-	background: #00000071;
-	backdrop-filter: blur(50px);
+
+	backdrop-filter: blur(1px);
 	display: grid;
 	gap: 1rem;
-	grid-template-columns: repeat(auto-fit, minmax(360px, 3fr));
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
 	justify-content: center;
 	align-items: center;
-	grid-gap: 3px;
 	padding-left: 5vw;
 	padding-right: 5vw;
+	padding-top: 5vw;
+	padding-bottom: 5vw;
+	font-family: 'Roboto mono';
+
+	margin-bottom: 20vh;
 }
-.entralizeit {
-	display: contents;
-	grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
-	margin-right: 10vw;
-	margin-left: 10w;
-	margin-top: 2vw;
-}
-.servi {
-	background-color: rgba(0, 0, 0, 0.671);
-	border-radius: 9px;
-	padding: 15px;
-	margin-bottom: 30px;
-}
+
 .neonText {
 	animation: flicker 1.5s infinite alternate;
 	color: rgb(255, 255, 255);
@@ -912,24 +897,26 @@ img {
 .servix {
 	text-align:center;
 	min-width: 400px;
-	padding-left: 8vw;
-	padding-right: 8vw;
 	border-radius: 9px;
 	cursor: pointer;
 	transition: transform .5s;
-	background-color: azul;
 	font-family: 'roboto mono';
+	padding-left: 20vw;
+	padding-right: 20vw;
 }
-.servix:hover i {
-	color: branco;
+.servix p {
+	padding: 10px;
+	margin: 10px;
+
 }
 .servix:hover {
 
 	color: rgb(255, 255, 255);
 	transform: scale(1.04);
+
 }
 .servix:p{
-	background-color: rgba(0, 0, 0, 0.534);
+	background-color: rgb(0, 0, 0);
 }
 .service:hover i {
 	color: branco;
@@ -963,7 +950,7 @@ img {
 	padding-bottom: -25px;
 }
 .service:hover {
-	background: #c0c0c086;
+	background: #09063885;
 	color: #fff;
 	transform: scale(1.05);
 }
@@ -1840,12 +1827,7 @@ body.minimal {
 		padding-top: 10px
 	}
 }
-.background-image-container2 {
-	background-size: cover;
-	background-repeat: repeat;
-	background-position: top;
-	background-attachment: fixed;
-}
+
 .img {
 	opacity: 0.8;
 }
@@ -1855,6 +1837,7 @@ body.minimal {
 .background-image-container {
 	background-size: cover;
 	background-repeat: no-repeat;
+	background-attachment: fixed;
 	background-position: top;
 	background-color: rgb(5, 5, 5);
 }
@@ -2226,7 +2209,8 @@ a {
 	width: 100%
 }
 .w3-card {
-	background-color: rgba(0, 0, 0, 0.671);
+	backdrop-filter: blur(20px);
+	background-color: rgba(0, 0, 0, 0);
 	padding: 15px;
 }
 .w3-responsive {
@@ -2638,14 +2622,27 @@ a {
 .w3-right {
 	float: right !important
 }
+
+.rounded {
+	border-radius: 9px;
+
+}
+	
 .w3-button:hover {
 	color: #000 !important;
 	background-color: #ccc !important
 }
 .w3-black {
 	color: #fff;
-	background-color: rgba(0, 0, 0, 0.863);
+	background-color: rgba(0, 0, 0, 0.233);
+	backdrop-filter: blur(2px);
 	padding: 15px 32px;
+}
+.w3-black1 {
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0.603);
+	backdrop-filter: blur(10px);
+	align-content: center;
 }
 .w3-grey {
 	color: #000 !important;
